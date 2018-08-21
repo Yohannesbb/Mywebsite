@@ -1,0 +1,8 @@
+# Hello! This is .htaccess, a very powerful server configuration 
+# file. It should be pretty much empty at first, but over time you 
+# (or programs such as WordPress) may add customizations to it. Be 
+# careful with this file, since a mistake can break everything.
+# You may want to periodically back it up, but keep it's contents
+# secret!
+
+DirectoryIndex index.html index.htm index.php your_domain_is_ready.html
