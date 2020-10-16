@@ -3,29 +3,24 @@
 * {
     box-sizing: border-box;
 }
-/*
-body {
-	  background-image: url(eri_ethio.jpg);
-    background-repeat: no-repeat;
-    background-position: right top;
-    margin-right: 200px;
-    background-attachment: fixed;
-		  font-family: Arial
-			padding: 10px;
-} */
 
-body {
-    font-family: Arial;
-    padding: 10px;
-    background: #aab;
+h2 {
+  color: rgb(46, 12, 12);
+  text-align: center;
 }
-
+body {
+	  background-image: url(img/Bergen.JPG), url(img/inclusion.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;		
+} 
 
 
 .video-container {
     float: left;
-    width: 33.33%; height: auto;
-    padding: 5px;
+    width: 33.33%; 
+    height: auto;
+    padding: 10px;
 }
 
 .clearfix::after {
@@ -35,27 +30,34 @@ body {
 }
 /* Header/Blog Title */
 .header {
-    padding: 30px;
+  
+  
+    padding: 20px;
     text-align: center;
-    background: #aaa;
+    background: rgb(91, 177, 158);
 }
 
 .header h1 {
     font-size: 50px;
+    color: #f3ebeb;
 }
 
 /* Style the top navigation bar */
 .topnav {
     overflow: hidden;
     background-color: #333;
+    position: -webkit-sticky;
+    top: -50;
+    width:100%;
+    transition: top 0.3s;
 }
 
 /* Style the topnav links */
 .topnav a {
-    float: left;
+    float: inline-start;
     display: block;
     color: #f2f2f2;
-    text-align: center;
+    text-align:center ;
     padding: 14px 16px;
     text-decoration: none;
 }
@@ -69,51 +71,69 @@ body {
 /* Create two unequal columns that floats next to each other */
 /* Left column */
 .leftcolumn {
-    float: left;
-    width: 75%;
-}
-
-/* Right column */
-.rightcolumn {
-    float: left;
-    width: 25%;
-    background-color: #aab;
-    padding-left: 20px;
-}
-
-/* Fake image */
-.fakeimg {
-    background-color: #aaa;
+    float: center;
     width: 100%;
-		height: auto;
-    padding: 20px;
+    height: 1000px;
+    background-color: rgb(91, 177, 158, 0.5);
+    padding-top: 50px;
 }
 
 
 /* Add a card effect for articles */
 .card {
-    background-color: #aaa;
-		width: 100%;
+    background-color: rgba (187, 255, 255, 0.5);
 		height: auto;
-    padding: 20px;
-    margin-top: 20px;
+   width: 100%;
 }
-.cardl {
-    background-color: #aaa;
-		width: 100%;
-		height: auto;
-    padding: 20px;
-    margin-top: 20px;
-}
+
 
 /* Clear floats after the columns */
 .row:after {
     content: "";
     display: table;
     clear: both;
+    
+}
+.main {
+  height:400px;
+  background-color:rgba(0,0,0, 0.5);
+  font-size:36px
+}
+.main h3 {
+  color: #f3eded;
+  font-family: 'Syncopate',Georgia,times new roman,Times,serif;
+  line-height: 1.5;
+  float: center;
+  padding-left: 50px;
+  padding-top: 50px;
+}
+/*Paralex */
+
+body,html {
+
+  height: 100%;
 }
 
+.parallax {
+  /* The image used */
+  background-image: none;
 
+  /* Full height */
+  height: 90%; 
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Turn off parallax scrolling for tablets and phones. Increase the pixels if needed */
+@media only screen and (max-device-width: 1366px) {
+  .parallax {
+    background-attachment: scroll;
+  }
+}
 
 /* Footer */
 .footer {
@@ -127,12 +147,7 @@ body {
     margin-top: 20px;
 }
 
-/* Responsive layout - when the screen is less than 800px wide, make the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 800px) {
-    .leftcolumn, .rightcolumn {
-        width: 100%;
-        padding: 0;
-    }
+
 }
 
 /* Responsive layout - when the screen is less than 400px wide, make the navigation links stack on top of each other instead of next to each other */
@@ -142,3 +157,4 @@ body {
         width: 100%;
     }
 }
+
