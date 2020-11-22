@@ -95,10 +95,10 @@ body {
     
 }
 .main {
-  font-family: 'Tangerine', serif;
+  font-family: serif;
   font-size: 38px;
   height:600px;
-  background-color:rgba(0,0,0, 0.5);
+  background-color:rgba(243, 237, 237, 0.5);
   text-shadow: 4px 4px 4px #aaa;
 }
 .leftbox {
@@ -121,7 +121,7 @@ img {
 }
 .main h3 {
   color: #f3eded;
-  font-family: 'Syncopate',Georgia,times new roman,Times,serif;
+  font-family: Georgia,times new roman,Times,serif;
   line-height: 1.5;
   float: center;
   padding-left: 50px;
